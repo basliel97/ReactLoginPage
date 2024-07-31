@@ -1,0 +1,126 @@
+/* Ensure full height for the container */
+body{
+    background-image: url('assets/background.jpg');
+    /* min-height: 100vh; */
+    background-size: cover;
+    background-position:center;
+}
+html, body, #root {
+    /* height: 100%; */
+    margin: 0;
+    display: flex;
+    /* box-sizing: border-box; */
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.login-container {
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 70px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #383737;
+    padding-right: 40px; /* Leave space for the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input::placeholder {
+    color: #090707;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #383737;
+}
+
+.submit {
+    background-color: #259a29;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 25px;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit:hover {
+    background-color: #063a07;
+    color: #ccc;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.remember-forget a {
+    color: #383737;
+    padding: 5px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    text-align: center;
+    font-size: 14.5px;
+    margin-top: 20px;
+}
+
+.link a {
+    color: #0414f0;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
